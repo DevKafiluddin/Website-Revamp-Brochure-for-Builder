@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commercial Case Studies & Project Portfolio | Apex Construction</title>
+  <meta name="description" content="Explore our portfolio of completed educational extensions, office refurbishments, and community building projects. Filterable case studies with project specs and client feedback.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header class="top-bar">
+    <div class="top-bar-badges">
+      <div class="top-bar-badge-item"><span>✓</span> SafeContractor Approved</div>
+      <div class="top-bar-badge-item"><span>★</span> Which? Trusted Trader</div>
+      <div class="top-bar-badge-item"><span>🏛</span> FMB Master Builder</div>
+    </div>
+    <div class="top-bar-contact">
+      <a href="tel:08001234567">☎ 0800 123 4567</a>
+      <a href="mailto:commercial@apexconstruction.co.uk">✉ commercial@apexconstruction.co.uk</a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="brand-logo">
+      <div class="logo-icon">A</div>
+      <div>
+        Apex Commercial Construction
+        <span class="brand-tagline">SafeContractor Approved • Flagship Commercial Projects</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="case-studies.html" class="active">Case Studies</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="school-intro.html">Schools & Academies</a></li>
+      <li><a href="brochure-print.html" class="btn btn-sm btn-outline">🖨 Commercial Brochure</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <section style="background: var(--primary-navy); color: #fff; padding: 3.5rem 0 3rem;">
+    <div class="container">
+      <h1 style="color: #fff; margin-bottom: 0.75rem;">Commercial Case Studies</h1>
+      <p style="color: #cbd5e1; max-width: 700px;">
+        Detailed summaries of flagship builds, school extensions, and office fit-outs. Filter by sector to examine project timelines, budget adherence, and client outcomes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Case Studies Section -->
+  <section class="section-padding">
+    <div class="container">
+      
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Sectors</button>
+        <button class="filter-btn" data-filter="education">Education & Schools</button>
+        <button class="filter-btn" data-filter="commercial">Commercial Fit-Outs</button>
+        <button class="filter-btn" data-filter="community">Community & Heritage</button>
+      </div>
+
+      <!-- Grid of Cards -->
+      <div class="grid-3">
+
+        <!-- Case Study 1: Education -->
+        <div class="card filterable-card" data-category="education">
+          <div class="card-img-wrapper">
+            <img src="./assets/flagship_school_extension.jpg" alt="St Mary's Primary Extension">
+            <span class="card-tag">Education</span>
+          </div>
+          <div class="card-body">
+            <h3>St Mary’s Primary Academy</h3>
+            <p>4-classroom timber-clad extension and STEM lab facility delivered during summer holiday window with zero disruption.</p>
+            <div class="meta-spec-list">
+              <span class="spec-pill">Value: £680,000</span>
+              <span class="spec-pill">Time: 14 Weeks</span>
+              <span class="spec-pill">DBS Cleared</span>
+            </div>
+            <a href="#" class="btn btn-sm btn-primary view-case-study-btn" data-case-id="st-marys">View Full Specs & Review →</a>
+          </div>
+        </div>
+
+        <!-- Case Study 2: Commercial -->
+        <div class="card filterable-card" data-category="commercial">
+          <div class="card-img-wrapper">
+            <img src="./assets/commercial_office_fitout.jpg" alt="Oakridge Business Park Office">
+            <span class="card-tag">Commercial</span>
+          </div>
+          <div class="card-body">
+            <h3>Oakridge Business Park</h3>
+            <p>Category A & B office refurbishment for 12,000 sq ft headquarters with glass partitions and linear LED systems.</p>
+            <div class="meta-spec-list">
+              <span class="spec-pill">Value: £420,000</span>
+              <span class="spec-pill">Time: 10 Weeks</span>
+              <span class="spec-pill">FMB Member</span>
+            </div>
+            <a href="#" class="btn btn-sm btn-primary view-case-study-btn" data-case-id="apex-tech-park">View Full Specs & Review →</a>
+          </div>
+        </div>
+
+        <!-- Case Study 3: Community & Heritage -->
+        <div class="card filterable-card" data-category="community">
+          <div class="card-img-wrapper">
+            <img src="./assets/site_safety_inspection.jpg" alt="St Jude's Community Renovation">
+            <span class="card-tag">Community</span>
+          </div>
+          <div class="card-body">
+            <h3>St Jude’s Community Hall</h3>
+            <p>Structural reinforcement, lime mortar restoration, and DDA automated accessibility upgrades for public facility.</p>
+            <div class="meta-spec-list">
+              <span class="spec-pill">Value: £290,000</span>
+              <span class="spec-pill">Time: 8 Weeks</span>
+              <span class="spec-pill">SafeContractor</span>
+            </div>
+            <a href="#" class="btn btn-sm btn-primary view-case-study-btn" data-case-id="heritage-community">View Full Specs & Review →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Dynamic Modal for Deep Dive Case Studies -->
+  <div class="modal-overlay" id="case-study-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modal-title" style="color: var(--primary-navy);">Project Specification</h3>
+        <button class="modal-close" id="modal-close">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-content">
+        <!-- Content inserted dynamically by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 Apex Commercial Construction Ltd. All rights reserved.</div>
+        <div>SafeContractor SC-98412 • Which? Trusted Trader • FMB Member</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
